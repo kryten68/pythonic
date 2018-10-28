@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "partials/head.html" %}
+
+<body class="">
+<div class="wrapper ">
+    {% include "partials/sidebar.html" %}
+    <div class="main-panel">
+        <!-- Navbar -->
+        {% include "partials/navbar.html" %}
+        <!-- End Navbar -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                {% include "partials/form_part_one.html" %}
+                            </div>
+
+                            <div class="col-md-6">
+                                {% include "partials/form_part_two.html" %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                {% include "partials/form_part_three.html" %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% include "partials/footer.html" %}
+
+<!--   Core JS Files   -->
+{% include "partials/scripts.html" %}
+
+</body>
+</html>
