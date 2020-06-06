@@ -17,3 +17,6 @@ with adls_client.open(path, 'rb') as f:
     file_contents = f.read()
     file_contents_string = file_contents.decode('utf-8')
     
+with adls_client.open("/stan/newfile.json",'wb') as w:
+    w.write(file_contents)
+    w.close()
