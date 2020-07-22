@@ -1,0 +1,23 @@
+class Config(object):
+    USER            = 'Stuart Henderson'
+
+class Dev(Config):
+    USER            = 'Kryten'
+
+class Prod(Config):
+    USER            = 'No one here....'
+    
+class Azure(Config):
+    TENANT_ID       = 'cf933758-c824-45d3-a465-d31e6f5b002c'
+    CLIENT_ID       = '2cbb6026-87c1-4a65-b103-ba568ee11b45'
+    CLIENT_SECRET   = 'Ir3bqEVPX7Df~h~zWZ_047Eo~KAF-B7_s.'
+    ADL_ACCOUNT     = 'krytenlake'
+    ADL_PATH        = '/stan/newcsv.csv'
+    
+class SecureConfig(Config):
+    TENANT_ID       = '03075D52555C761916441A5D45464658512E7869296763775E03455204005F0D51045E511B'
+    CLIENT_ID       = '1540080E067C7B767E7E6D7510565B5700000C1551055E505514580D010B5750055A595252'
+    CLIENT_SECRET   = '022F160809172A177C765E3D03091A1516331014747C64102D0D2C37254C740E67401A'
+    ADL_ACCOUNT     = '030F4912120A2F404F021C'
+    ADL_PATH        = '0544151B204201071C1214011D4207393D'
+    HASH_P          = '04580A140D2E421B5C'
